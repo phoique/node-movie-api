@@ -5,12 +5,31 @@ const MovieSchema = new Schema({
     director_id: Schema.Types.ObjectId,
     title: {
         type: String, 
-        required: true
+        required: [true, '`{PATH}` alanı zorunludur.'],
+        maxlength: [25, '`{PATH}` kısmı 25 karaterden uzun olamaz.'],
+        minlength: [3, '`{PATH}` kısmı 3 karakterden kısa olamaz.']
+
     },
-    category: String,
-    country: String,
-    year: Number,
-    imdb_score: Number,
+    category: {
+        type: String,
+        maxlength: 15,
+        minlength: 3
+    },
+    country: {
+        type: String,
+        maxlength: 15,
+        minlength: 3
+    },
+    year: {
+        type: Number,
+        max: 2020,
+        minlength: 1800
+    },
+    imdb_score: {
+        type: Number,
+        max: 10,
+        minlength: 0
+    },
     date: {type:Date, default: Date.now}
 });
 
