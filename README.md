@@ -8,7 +8,7 @@ Nodejs ile movie api Postman kullanarak veri ekleme silme gibi işlemler yapıld
 /api/movie = Delete => filmi silme işlemi yapılır. <br>
 
 # Director
-/api/director = Get => Yönetmenin filmleri listelenir.
-/api/director = Post => yeni yönetmen eklenir.
-/api/director = Put => güncelleme yapılır.
-/api/director = Delete => yönetmen silme işlemi yapılır.
+/api/director = Get => Yönetmenin filmleri listelenir. <br>
+/api/director = Post => yeni yönetmen eklenir. <br>
+/api/director = Put => güncelleme yapılır. <br>
+/api/director = Delete => yönetmen silme işlemi yapılır. <br>
