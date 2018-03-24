@@ -1,2 +1,2 @@
 # node-movie-api
-Node.js movie api
+Nodejs ile movie api geliştiriyoruz.
